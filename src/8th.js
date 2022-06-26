@@ -81,7 +81,7 @@ function displayWeatherCondition(response) {
     let humidity=response.data.main.humidity;
     document.querySelector("#humidity").innerHTML=` Humidity: ${humidity} % ` ;
     let wind=Math.round(response.data.wind.speed);
-    document.querySelector("#wind").innerHTML=` Wind Speed: ${wind} Km/h `;
+    document.querySelector("#wind").innerHTML=` Wind Speed: ${wind} m/h `;
     document.querySelector("#date").innerHTML=formateDate(response.data.dt *1000);
     let iconElement=document.querySelector("#icon");
     celsiusTemp=response.data.main.temp;
